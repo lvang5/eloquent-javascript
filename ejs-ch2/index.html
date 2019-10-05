@@ -29,6 +29,27 @@ function fizzBuzz(){
 }
 
 fizzBuzz();
+
+function chessBoard(){
+    let size = 8;
+    console.log("working");
+     let board = "";
+    for( let i = 0; i < size; i++){
+        for(let j = 0; j < size; j++){
+            if( (i + j) % 2 === 0){
+                board += " ";
+            }
+            else {
+                board += "#";
+            }
+        }
+        board += "\n"
+    }
+console.log(board);
+}
+
+chessBoard(8);
+
 </script>
 </head>
 <h1>Welcome to FizzBuzz problem #1</h1>
